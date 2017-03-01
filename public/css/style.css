@@ -1,0 +1,661 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+body {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    min-width: 1140px;
+}
+
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-site-width{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+    color: #fffefe;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    font-weight: 200;
+    color: #fffefe;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/*<!-- ========================NAVIGATION&HEADER======================================== -->*/
+
+.language-nav {
+  display: inline-block;
+  margin-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.lang-btn{
+  text-transform: uppercase;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.navigation-container {
+    background-color: rgba(211, 53, 35, 0.9);
+    height: 70px;
+    text-align: right;
+    position: fixed;
+    left: 0; right: 0;
+    z-index: 999;
+}
+
+.header {
+    background-image: url("../media/bg-red.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.logo-info {
+    height: 70px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 100px;
+
+}
+
+.logo-text {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    padding-left: 45px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.navi {
+    display: inline-block;
+    text-align: center;
+    line-height: 65px;
+    padding-left: 15px;
+}
+
+.main-nav {
+  padding-right: 100px;
+  display: inline-block;
+}
+
+.main-nav .navi {
+  padding: 0 10px;
+  border-top: 5px solid transparent;
+}
+
+.navi:hover, .navi.active {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.title-container {
+    height: 80px;
+    background-color: #d33523;
+}
+
+.slider-main img{
+  max-width: 100%;
+}
+
+.slider.vertical {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+}
+
+.slider.vertical button:hover, button.active, .slider.vertical button.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.slider-direction-vertical .slider-items{
+  max-height: 650px;
+  overflow: hidden;
+}
+
+.slider-item.t-main-item {
+  white-space: normal;
+  height: 100%;
+  vertical-align: top;
+  transition: transform .5s ease-in-out;
+}
+
+.main-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 1100px;
+    margin: auto;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.social{
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.social a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social .social-main {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-main:hover, .social-main.active {
+  color: rgba(255, 255, 255, 0.8);
+}
+/*<!-- ========================NAVIGATION&HEADER END======================================== -->*/
+
+
+/*<!-- ========================OFFERS SECTION======================================== -->*/
+.container-offers {
+    background-color: #d33523;
+    padding-bottom: 80px;
+}
+
+.offer-blocks-container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.one-offer-block {
+    width: 25%;
+    float: left;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.offer-heading{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 35px;
+  padding-top: 20px;
+}
+
+.offer-description{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+img .one-offer-block{
+  padding-bottom: 20px;
+}
+/*<!-- ========================OFFERS SECTION END======================================== -->*/
+
+
+/*<!-- ========================OUR WORK SECTION======================================== -->*/
+.container-work {
+    background-image: url("../media/bg-green.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.description-work {
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.our-work-block {
+    width: 25%;
+    float: left;
+}
+
+.our-work-block img {
+    width: 100%;
+    display: block;
+}
+
+.our-work-image {
+    position: relative;
+}
+
+.work-overlay {
+    position: absolute;
+    background-color: rgba(87, 170, 104, 0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.our-work-image:hover .work-overlay {
+    visibility: visible;
+}
+
+.work-nav{
+  padding-top: 40px;
+}
+
+.work-btn {
+    margin: 25px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.work-nav .work-btn {
+  padding: 6px 13px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.work-btn:hover, .work-btn.active {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.work-heading{
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.work-comments{
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.work-comments i{
+  padding-bottom: 35px;
+}
+
+.work-comments a{
+  display: block;
+}
+
+button.slider-button{
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.slider.horizontal {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.slider.horizontal button:hover, button.active, .slider.horizontal button.active {
+    background-color: rgb(255, 255, 255);
+}
+/*<!-- ========================OUR WORK SECTION END======================================== -->*/
+
+
+/*<!-- ========================PRICELIST SECTION======================================== -->*/
+.price-nav a {
+    margin-right: 25px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+.price-nav{
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.price-nav .price-btn {
+  padding: 6px 13px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.price-btn:hover, .price-btn.active {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.pricelist{
+      background-image: url("../media/bg-green-overlay.svg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+  }
+
+.table-pricelist{
+  background-color: rgb(42, 87, 89);
+}
+.prices{
+  width: 1140px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.prices td,
+.prices th {
+  vertical-align: middle;
+  width: 25%;
+  border-bottom: 1px solid #437c7e;
+}
+
+.prices td{
+ padding: 20px;
+}
+
+.prices th{
+ text-transform: uppercase;
+}
+
+.monthly-prices td{
+  font-size: 32px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.prices th{
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.prices tfoot td{
+  height: 150px;
+}
+
+.prices .highlighted {
+   background: rgb(49, 103, 105)
+}
+
+.sign-up{
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 140px;
+  transition: background .1s;
+}
+
+button.sign-up:hover, button.activated, .sign-up button.activated{
+  background-color: rgb(71, 133, 135);
+}
+/*<!-- ========================PRICELIST SECTION END======================================== -->*/
+
+
+/*<!-- ========================TEAM SECTION======================================== -->*/
+.team-container {
+    background-color: #57aa68;
+    font-size: 0;
+}
+
+.team-description {
+    width: 1140px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.slider-direction-horizontal .slider-items {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-item.t-team-item, .slider-item.t-work-item {
+  white-space: normal;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  transition: transform .5s ease-in-out;
+}
+
+.team-image {
+    position: relative;
+    height: 290px;
+}
+
+.team-overlay {
+    position: absolute;
+    background-color: rgba(87, 170, 104, 0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.team-image:hover .team-overlay {
+    visibility: visible;
+}
+
+.one-team-block {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.team-block-container{
+  padding-bottom: 80px;
+}
+
+.team-social {
+  display: inline-block;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background .2s;
+}
+
+.team-social:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.team-social-blocks{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.team-social i{
+  line-height: 40px;
+}
+
+.team-comments{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 25px;
+  line-height: 1.5;
+}
+
+.team-heading{
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+
+.team-member{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    padding-top: 30px;
+}
+
+.team-position {
+    opacity: 0.56;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.84;
+}
+/*<!-- ========================TEAM SECTION END======================================== -->*/
+
+
+/*<!-- ========================CONTACT FORM SECTION======================================== -->*/
+.container-contact {
+    background-image: url("../media/bg-blue.svg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact-form{
+  width: 620px;
+  margin: auto;
+}
+
+.form-row{
+  margin-bottom: 10px;
+  }
+
+input[type="text"] {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 1.85;
+    padding: 10px;
+    background: #3e4a85;
+    opacity: 0.7;
+    border: 2px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+textarea[type="textarea"] {
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    rgba(255, 255, 255, 0.7);
+    height: 232px;
+    padding: 10px;
+    background: #3e4a85;
+    opacity: 0.7;
+    border: 2px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.submit {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 24px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    text-transform: uppercase;
+    transition: background .1s;
+}
+
+.submit:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-field{
+  position: relative;
+}
+
+.form-field.error{
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+
+.errors p{
+  margin-bottom: 10px;
+  width: 60%;
+  margin: 0;
+  line-height: 1;
+  border: 0;
+  background: red;
+  padding: .3em .5em;
+  display: inline-block;
+  min-width: 40%;
+  position: relative;
+  font-size: 14px;
+}
+
+.address {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+/*<!-- ========================CONTACT FORM SECTION END======================================== -->*/
+
+
+/*<!-- ========================PAGE FOOTER======================================== -->*/
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #2e2d6b;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.3;
+}
+/*<!-- ========================PAGE FOOTER END======================================== -->*/
