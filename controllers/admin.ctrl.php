@@ -12,7 +12,7 @@ class AdminCtrl{
 
         $messages = ContactMessage::getAll();
 
-        include '../views/layouts/admin.view.php';
+        include '../views/admin/admin.view.php';
 
     }
 

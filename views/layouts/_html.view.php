@@ -42,32 +42,32 @@
     </div>
 
     <?php
-    include '../views/layouts/header.view.php'
+    include '../views/header.view.php'
      ?>
 
 
     <?php
-    include '../views/layouts/offersSection.view.php'
+    include '../views/offers.view.php'
      ?>
 
      <?php
-     include '../views/layouts/workSection.view.php'
+     include '../views/portfolio.view.php'
       ?>
 
       <?php
-      include '../views/layouts/pricelistSection.view.php'
+      include '../views/pricelist.view.php'
        ?>
 
        <?php
-       include '../views/layouts/teamSection.view.php'
+       include '../views/team.view.php'
         ?>
 
         <?php
-        include '../views/layouts/contactFormSection.view.php'
+        include '../views/contacts.view.php'
          ?>
 
          <?php
-         include '../views/layouts/mapSection.view.php'
+         include '../views/map.view.php'
           ?>
 
 
