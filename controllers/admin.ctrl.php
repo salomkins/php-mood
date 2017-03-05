@@ -10,7 +10,7 @@ class AdminCtrl{
 
         include '../models/ContactMessage.php';
 
-        $messages = ContactMessage::getAll();
+        $messages = ContactMessage::getAll('DESC');
 
         include '../views/admin/admin.view.php';
 

@@ -1,4 +1,4 @@
 
-{"name":"Jani","email":"fdasfdsa@gadsfdsa.lv","message":"vecakais"}
-{"name":"Juris Muris","email":"fdsadsaf@gasfsdc.lv","message":"Pavisam jauns"}
-{"name":"Janis Salmins","email":"janis@janis.lv","message":"&lt;script&gt;alert(&quot;XSS&quot;);&lt;\/script&gt;"}
+{"name":"Janis Salmins","email":"janis.salmins@redline.lv","message":"Old message"}
+{"name":"Janis Salmins","email":"janis.salmins@redline.lv","message":"New message"}
+{"name":"Janis Saloma","email":"janis.salmins@redline.lv","message":"Brand new message"}

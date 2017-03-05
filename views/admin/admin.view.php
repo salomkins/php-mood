@@ -5,19 +5,12 @@
         <th>Message</th>
     </tr>
 
-<?php
-
-krsort($messages);
-foreach ($messages as $message) { ?>
+<?php foreach ($messages as $message) : ?>
   <tr>
       <td><?= $message->name; ?></td>
       <td><?= $message->email; ?></td>
       <td><?= $message->message; ?></td>
   </tr>
-<?php }
-
-?>
-
-
+<?php endforeach; ?>
 
 </table>
