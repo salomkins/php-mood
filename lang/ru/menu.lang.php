@@ -1,4 +1,5 @@
 <?php
+
 return [
     'home' => 'Главная',
     'services' => 'Yслуги',
@@ -6,4 +7,5 @@ return [
     'team' => 'Kоманда',
     'contacts' => 'Контакты'
 ];
+
 ?>

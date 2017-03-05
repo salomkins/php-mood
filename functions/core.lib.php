@@ -1,7 +1,5 @@
 <?php
 
-//functions/core.lib.php
-
 class CoreLib {
 
     public function run_controller($uri){
@@ -18,7 +16,5 @@ class CoreLib {
     }
 
 }
-
-
 
  ?>

@@ -1,4 +1,5 @@
 <?php
+
   return [
     'home' => 'Sākums',
     'services' => 'Pakalpojumi',
@@ -6,4 +7,5 @@
     'team' => 'Komanda',
     'contacts' => 'Sazināties'
   ];
+
  ?>

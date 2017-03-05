@@ -1,5 +1,4 @@
 <?php
-// funtions/html.lib.php
 
 class HtmlLib{
 

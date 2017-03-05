@@ -1,7 +1,5 @@
 <?php
 
-// controllers/admin.ctrl.php
-
 class AdminCtrl{
 
     public $messages = '';
@@ -17,4 +15,5 @@ class AdminCtrl{
     }
 
 }
+
  ?>

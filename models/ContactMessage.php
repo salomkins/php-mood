@@ -1,7 +1,5 @@
 <?php
 
-// models/ContactMessage.php
-
 class ContactMessage {
 
     public $name = '';
@@ -23,7 +21,6 @@ class ContactMessage {
     static function create($row) {
         $cm = new self;
         if (!is_array($row)) {
-            // is json string
             $row = json_decode($row, true);
         }
         $cm->name = $row['name'];

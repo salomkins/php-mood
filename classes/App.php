@@ -1,9 +1,5 @@
 <?php
 
-  // classes/App.php
-
-  // localhost/
-
 class App {
 
     public $loadedConfigs = [];

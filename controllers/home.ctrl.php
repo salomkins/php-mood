@@ -1,7 +1,5 @@
 <?php
 
-// controllers/admin.ctrl.php
-
 include '../functions/html.lib.php';
 
 class HomeCtrl {

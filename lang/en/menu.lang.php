@@ -1,4 +1,5 @@
 <?php
+
 return [
     'home' => 'Home',
     'services' => 'Services',
@@ -6,4 +7,5 @@ return [
     'team' => 'Team',
     'contacts' => 'Contact us'
 ];
+
 ?>

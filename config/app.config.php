@@ -1,5 +1,4 @@
 <?php
-  // config/app.config.php
 
   return [
     'default_locale' => "lv",

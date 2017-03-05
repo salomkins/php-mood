@@ -12,7 +12,6 @@
 <body>
 
     <div class="navigation-container" id="top">
-        <!-- <div class="main-site-width"> -->
 
             <div class="logo-info">
                 <a href="#header">
@@ -32,13 +31,7 @@
                     <a class="lang-btn" href="/?lang=<?= $locale; ?>"><?= $locale; ?></a>
                         <?php endforeach; ?>
                 </nav>
-              <!--<nav class="translate">
-                <a class="lang-btn" href="">lv</a>
-                <a class="lang-btn" href="">en</a>
-                <a class="lang-btn" href="">ru</a>
-              </nav>-->
             </div>
-        <!-- </div> -->
     </div>
 
     <?php
