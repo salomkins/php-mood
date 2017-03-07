@@ -4,10 +4,10 @@ include '../functions/html.lib.php';
 
 class HomeCtrl {
 
-public function home_controller() {
+public function homeController() {
     global $app;
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $asd = HomeCtrl::post_contact_us($_POST);
+        $asd = HomeCtrl::postContactUs($_POST);
     }
 
     $menu_lang = include '../lang/' . $app->getLocale() . '/menu.lang.php';
@@ -17,7 +17,7 @@ public function home_controller() {
 }
 
 
-public function post_contact_us(array $contact_message) {
+public function postContactUs(array $contact_message) {
     global $APP;
     $email = $contact_message['email'] ?? '';
     $name = $contact_message['fname'];

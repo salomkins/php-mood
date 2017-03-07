@@ -23,7 +23,7 @@
             </div>
 
             <nav class="main-nav">
-                <?php echo HtmlLib::render_nav($menu_lang, $menu_cfg) ?>
+                <?php echo HtmlLib::renderNav($menu_lang, $menu_cfg) ?>
             </nav>
             <div class="language-nav">
                 <nav class="translate">

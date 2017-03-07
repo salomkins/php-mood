@@ -2,7 +2,7 @@
 
 class HtmlLib{
 
-    public function create_attr_str($classes)
+    public function createAttrStr($classes)
     {
 
         if (empty($classes)) {
@@ -20,7 +20,7 @@ class HtmlLib{
     }
 
 
-    public function render_nav($menu_lang, $menu_cfg)
+    public function renderNav($menu_lang, $menu_cfg)
     {
         $res = '';
         $sk = 0;
@@ -33,7 +33,7 @@ class HtmlLib{
                 $classes[] = 'navi';
             }
 
-            $res .= '<a href=' . $menu_cfg[$key] . ' ' . HtmlLib::create_attr_str($classes) . ' title="' . $menu_lang[$key] . '">' . $menu_lang[$key] . '</a>';
+            $res .= '<a href=' . $menu_cfg[$key] . ' ' . HtmlLib::createAttrStr($classes) . ' title="' . $menu_lang[$key] . '">' . $menu_lang[$key] . '</a>';
             $sk++;
         }
         return $res;

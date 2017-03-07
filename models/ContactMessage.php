@@ -61,11 +61,6 @@ class ContactMessage {
 
         $collection = [];
 
-        if ($order === 'DESC') {
-            array_reverse($collection);
-        }
-
-
         for($k = 0; $k < $rows_count; $k++) {
             $collection[] = self::create($rows[$k]);
         }

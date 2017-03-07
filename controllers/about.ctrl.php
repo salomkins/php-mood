@@ -2,7 +2,7 @@
 
 class AboutCtrl {
 
-    function about_controller()
+    function aboutController()
     {
         echo 'About';
     }

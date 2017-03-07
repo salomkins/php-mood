@@ -19,6 +19,6 @@ if($pos !== false){
 
 include '../functions/core.lib.php';
 
-CoreLib::run_controller($APP['ROUTE']);
+CoreLib::runController($APP['ROUTE']);
 
 ?>
