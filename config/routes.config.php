@@ -1,8 +1,8 @@
 <?php
 
 return [
-  '/' => 'home',
-  '/about' => 'about',
-  '/admin' => 'admin'
+  '/' => 'HomeController',
+  '/about' => 'AboutController@index',
+  '/admin' => 'AdminController@index'
 ]
  ?>

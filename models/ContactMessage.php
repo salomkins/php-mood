@@ -2,20 +2,25 @@
 
 class ContactMessage {
 
-    public $name = '';
-    public $email = '';
-    public $message = '';
+    private $data = [];
+    private $file = '';
 
 
     function save() {
-        $row = [
-            'name' => $this->name,
-            'email' => $this->email,
-            'message' => $this->message,
-        ];
-        $row = json_encode($row);
+
+        $row = json_encode($this->data);
         $row .= "\n";
-        file_put_contents('../db/messages.txt', $row, FILE_APPEND);
+
+
+            if(!is_dir('../db/')) {
+                mkdir('../db/');
+            }
+        file_put_contents('../db/' . $this->file, $row, FILE_APPEND);
+    }
+
+    function setDb($file, $data) {
+        $this->data = $data;
+        $this->file = $file;
     }
 
     static function create($row) {
@@ -33,7 +38,7 @@ class ContactMessage {
     static function getById($row_nr) {
         $cur_row = 1;
         $is_found = false;
-        $fp = @fopen('../db/messages.txt', 'r');
+        $fp = fopen('../db/messages.txt', 'r');
         if ($fp) {
             while ($row = fgets($fp)) {
                 if ($cur_row === $row_nr) {

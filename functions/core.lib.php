@@ -4,10 +4,17 @@ class CoreLib {
 
     public function runController($uri){
         $routes = include '../config/routes.config.php';
-        if (isset($routes[$uri])) {
-            include '../controllers/' . $routes[$uri] . '.ctrl.php';
-            $ctrl = ucfirst($routes[$uri]) . 'Ctrl';
-            call_user_func(array($ctrl, $routes[$uri] . 'Controller'), $routes[$uri] . 'Controller');
+        $split = explode("@", $routes[$uri]);
+        $controller = $split[0];
+        $method = isset($split[1]) ? $split[1]:'index';
+
+        if(file_exists('../controllers/' . $controller . '.php')) {
+            include '../controllers/' . $controller . '.php';
+            if(method_exists($controller, $method)) {
+                call_user_func(array($controller, $method));
+            } else {
+                echo '404';
+            }
         } else {
             echo '404';
         }
