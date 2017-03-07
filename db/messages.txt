@@ -1,6 +1,1 @@
 
-{"name":"Janis Salmins","email":"janis.salmins@redline.lv","message":"Old message"}
-{"name":"Janis Salmins","email":"janis.salmins@redline.lv","message":"New message"}
-{"name":"Janis Saloma","email":"janis.salmins@redline.lv","message":"Brand new message"}
-{"name":"Janis Salmins","email":"janis.salmins@redline.lv","message":"Test message"}
-{"name":"Janis Saloma","email":"salmsss@inbox.lv","message":"Test message 2"}

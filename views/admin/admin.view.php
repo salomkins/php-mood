@@ -5,11 +5,13 @@
         <th>Message</th>
     </tr>
 
+    <?php use function htmlspecialchars as e ?>
+
 <?php foreach ($messages as $message) : ?>
   <tr>
-      <td><?= $message->name; ?></td>
-      <td><?= $message->email; ?></td>
-      <td><?= $message->message; ?></td>
+      <td><?= e($message->name); ?></td>
+      <td><?= e($message->email); ?></td>
+      <td><?= e($message->message); ?></td>
   </tr>
 <?php endforeach; ?>
 

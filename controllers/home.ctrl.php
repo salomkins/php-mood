@@ -51,9 +51,9 @@ public function postContactUs(array $contact_message) {
     } else {
         include '../models/ContactMessage.php';
         $cm = new ContactMessage;
-        $cm->name = htmlspecialchars($name);
-        $cm->email = htmlspecialchars($email);
-        $cm->message = htmlspecialchars($message);
+        $cm->name = $name;
+        $cm->email = $email;
+        $cm->message = $message;
         $cm->save();
     }
 
