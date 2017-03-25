@@ -19,45 +19,30 @@ public function index() {
 
 public function postContactUs(array $contact_message) {
     global $APP;
-    $email = $contact_message['email'] ?? '';
-    $name = $contact_message['fname'];
-    $message = $contact_message['textarea'];
-    $errors = [
-        'E-mail field left blank',
-        'Invalid e-mail',
-        'Name field left blank',
-        'No message received'
-    ];
+    if($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    if ($email === '') {
-        $APP['FORM_ERROR']['email'] = $errors[0];
-    }else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $APP['FORM_ERROR']['invalidemail'] = $errors[1];
-    }
-    if ($name === '') {
-        $APP['FORM_ERROR']['name'] = $errors[2];
-    }
+        include '../models/Validator.php';
+        $validator = new Validator;
+        $validator->validate($_POST, [
+            "fname" => "required",
+            "email" => "required|email",
+            "textarea" => "required"
+        ]);
 
-    if ($message === '') {
-        $APP['FORM_ERROR']['message'] = $errors[3];
-    }
 
-    if (isset($APP['FORM_ERROR'])) {
-        foreach($APP['FORM_ERROR'] as $logs) {
-            error_log(date("Y-m-d H:i:s") . ' ', 3, "../db_old/cm-errors.log");
-            error_log($logs . "\n", 3, "../db_old/cm-errors.log");
+        if($validator->isValid()) {
+            include '../models/ContactMessage.php';
+            $row = [
+               'fname' => $_POST["fname"],
+               'email' => $_POST["email"],
+               'textarea' => $_POST["textarea"],
+            ];
+            $cm = new ContactMessage;
+            $cm->setDb('messages.txt', $row);
+            $cm->save();
+        } else {
+            $APP['FORM_ERROR'] = $validator->getAllErrorMessages();
         }
-
-    } else {
-        include '../models/ContactMessage.php';
-        $row = [
-            'name' => $name,
-           'email' => $email,
-           'message' => $message,
-        ];
-        $cm = new ContactMessage;
-        $cm->setDb('messages.txt', $row);
-        $cm->save();
     }
 
 }
