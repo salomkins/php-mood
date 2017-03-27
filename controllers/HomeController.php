@@ -21,7 +21,7 @@ public function postContactUs(array $contact_message) {
     global $APP;
     if($_SERVER["REQUEST_METHOD"] === "POST") {
 
-        include '../models/Validator.php';
+        include '../classes/Validator.php';
         $validator = new Validator;
         $validator->validate($_POST, [
             "fname" => "required",

@@ -77,7 +77,7 @@
         <!-- ========================PAGE FOOTER END======================================== -->
         <script src="js/helper.js"></script>
         <script src="js/smoothScroll.js"></script>
-        <script src="js/formValidation.js"></script>
+<!--        <script src="js/formValidation.js"></script>-->
         <script src="js/slider.js"></script>
         <script src="js/workGallery.js"></script>
 </body>
