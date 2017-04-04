@@ -2,7 +2,7 @@
 
 class HtmlLib{
 
-    public function createAttrStr($classes)
+    public static function createAttrStr($classes)
     {
 
         if (empty($classes)) {
@@ -20,7 +20,7 @@ class HtmlLib{
     }
 
 
-    public function renderNav($menu_lang, $menu_cfg)
+    public static function renderNav($menu_lang, $menu_cfg)
     {
         $res = '';
         $sk = 0;

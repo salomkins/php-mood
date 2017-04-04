@@ -2,7 +2,7 @@
 
 class CoreLib {
 
-    public function runController($uri){
+    public static function runController($uri){
         $routes = include '../config/routes.config.php';
         $split = explode("@", $routes[$uri]);
         $controller = $split[0];

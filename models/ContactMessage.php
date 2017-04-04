@@ -28,9 +28,9 @@ class ContactMessage {
         if (!is_array($row)) {
             $row = json_decode($row, true);
         }
-        $cm->name = $row['name'];
+        $cm->name = $row['fname'];
         $cm->email = $row['email'];
-        $cm->message = $row['message'];
+        $cm->message = $row['textarea'];
 
         return $cm;
     }
