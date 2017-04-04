@@ -2,7 +2,7 @@
 
 class AboutController{
 
-    function index()
+    public static function index()
     {
         echo 'About';
     }

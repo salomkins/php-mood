@@ -4,7 +4,7 @@ include '../functions/html.lib.php';
 
 class HomeController {
 
-public function index() {
+public static function index() {
     global $app;
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $asd = HomeController::postContactUs($_POST);

@@ -60,21 +60,24 @@ class ContactMessage {
     }
 
     static function getAll($order) {
-        $content = file_get_contents('../db/messages.txt');
-        $rows = explode("\n", $content);
-        $rows_count = count($rows) - 1;
+        if (file_exists('../db/messages.txt')) {
+            $content = file_get_contents('../db/messages.txt');
+            $rows = explode("\n", $content);
+            $rows_count = count($rows) - 1;
 
-        $collection = [];
+            $collection = [];
 
-        for($k = 0; $k < $rows_count; $k++) {
-            $collection[] = self::create($rows[$k]);
+            for ($k = 0; $k < $rows_count; $k++) {
+                $collection[] = self::create($rows[$k]);
+            }
+
+            if ($order === 'DESC') {
+                return array_reverse($collection);
+            } else {
+                return $collection;
+            }
         }
-
-        if ($order === 'DESC') {
-            return array_reverse($collection);
-        } else {
-            return $collection;
-        }
+        return $collection ?? [];
     }
 
 

@@ -4,7 +4,7 @@ class AdminController{
 
     public $messages = '';
 
-    function index() {
+    public static function index() {
 
         include '../models/ContactMessage.php';
 
